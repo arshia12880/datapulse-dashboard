@@ -4,15 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DATAPULSE — A modern analytics dashboard.">
-
+  <meta name="description" content="DATAPULSE analytics dashboard.">
   <title>DATAPULSE | Dashboard</title>
-
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <h1>DATAPULSE</h1>
-  <p>Your analytics dashboard starts here.</p>
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">D</span>
+        <span>DATAPULSE</span>
+      </a>
+
+      <p class="nav-label">WORKSPACE</p>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html">
+          <span class="nav-icon">▦</span> Dashboard
+        </a>
+        <a class="nav-link" href="analytics.html">
+          <span class="nav-icon">⌁</span> Analytics
+        </a>
+        <a class="nav-link" href="orders.html">
+          <span class="nav-icon">▤</span> Orders
+        </a>
+        <a class="nav-link" href="customers.html">
+          <span class="nav-icon">♙</span> Customers
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a class="nav-link" href="settings.html">
+          <span class="nav-icon">⚙</span> Settings
+        </a>
+        <div class="workspace-card">
+          <span class="workspace-dot"></span>
+          <div>
+            <strong>Free Workspace</strong>
+            <small>Personal account</small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+
+        <div class="breadcrumb">Workspace <span>/</span> Dashboard</div>
+
+        <div class="topbar-actions">
+          <button class="icon-button" aria-label="Notifications">♧</button>
+          <div class="user-profile">
+            <div class="avatar">A</div>
+            <div class="user-info">
+              <strong>Admin User</strong>
+              <small>Administrator</small>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">OVERVIEW</p>
+            <h1>Dashboard</h1>
+            <p class="page-description">
+              Welcome back! Here's what's happening with your business.
+            </p>
+          </div>
+          <button class="primary-button" type="button">
+            + Create report
+          </button>
+        </div>
+
+        <!-- Dashboard cards and charts will be added next. -->
+        <div class="welcome-panel">
+          <div class="welcome-symbol">✦</div>
+          <h2>Your workspace is ready</h2>
+          <p>Your analytics and business insights will appear here.</p>
+        </div>
+      </section>
+    </main>
+
+  </div>
 </body>
 </html>
